@@ -1,4 +1,3 @@
-const config = require('../config/db');
 const Subscriptions = require('../models/Subscription');
 
 async function getSubscriptionsByPhoneNumber(phoneNumber, page = 1) {

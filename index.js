@@ -1,14 +1,12 @@
 const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
-var cors = require('cors');
 dotenv.config();
-const sequelize = require('./loaders/mysql');
+const cors = require('cors');
 const port = process.env.PORT || 3000;
 
-
-var corsOptions = {
-  origin: "http://localhost:8081"
+const corsOptions = {
+  origin: "*"
 };
 
 app.use(cors(corsOptions));

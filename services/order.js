@@ -1,4 +1,3 @@
-const db = require('./db');
 const Orders = require('../models/Order');
 
 async function getOrdersBySubscriptionId(subscriptionId, page = 1) {
